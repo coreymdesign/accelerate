@@ -16,7 +16,14 @@ get_header(); ?>
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); 
+				$services = get_field('services');
+				$client = get_field('client');
+				$link = get_field('site_link');
+				$image_1 = get_field('image_1');
+				$image_2 = get_field('image_2');
+				$image_3 = get_field('image_3');
+			?>
 				<?php the_content(); ?>
 			<?php endwhile; // end of the loop. ?>
 
