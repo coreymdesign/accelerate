@@ -38,6 +38,17 @@ function create_custom_post_types() {
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
+     register_post_type( 'features',
+        array(
+            'labels' => array(
+                'name' => __( 'Features' ),
+                'singular_name' => __( 'Feature' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'features' ),
+        )
+    );
 }
 add_action( 'init', 'create_custom_post_types' );
 
@@ -52,3 +63,13 @@ $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
 $excerpt = $excerpt.'<a href="'.$permalink.'"> [...]</a>';
 return $excerpt;
 }
+
+register_sidebar( array(
+    'name' =>__( 'Homepage sidebar', 'homepage-sidebar'),
+    'id' => 'sidebar-2',
+    'description' => __( 'Appears on the static front page template', 'homepage-sidebar' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );

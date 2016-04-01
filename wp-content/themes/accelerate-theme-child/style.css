@@ -27,35 +27,72 @@
 
 .primary-navigation ul li{
 	display: inline-block;
+    padding: 0 10px;
+    font-weight: 600;
 }
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
 
 .blog-post {
-	width: 50%;
+	width: 45%;
+    float:left;
+    padding-right: 30px;
 }
 
-.blog-post h4 {
+.twitter-feed{
+    width: 45%;
+    float:left;
+    padding-left: 30px;
+}
+
+.blog-post h4, .twitter-feed h4, aside#mc4wp_form_widget-2 h3 {
 	font-size: 16px;
 	font-family: 'Montserrat';
 	color: #a6a6a6;
 	text-transform: uppercase;
+    margin: 36px 0;
 }
 
-.blog-post h2 {
+.blog-post h2, aside#pi_simpletwittertweets-2 h3, aside#mc4wp_form_widget-2 h2 {
+    color: #000;
 	font-size: 24px;
 	font-family: 'Montserrat';
 	font-weight: bold;
+    margin: 36px 0;
 }
 
-.blog-post .read-more-link {
+.blog-post .read-more-link, .twitter-feed #follow-button {
 	font-size: 16px;
 	font-family: 'Montserrat';
 	font-weight: bold;
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+.twitter-feed .widget {
+    font-size: 1em;
+    font-weight: normal;
+    padding: 0;
+}
+
+
+
+ul.tweets{
+    list-style:none;
+}
+
+.footer-widget{
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+    clear:both;
+}
+
+.tweets li{
+    margin-left: -20px;
+}
+
 
 /* CASE STUDIES */
 
@@ -115,4 +152,163 @@ li.individual-featured-work {
     display: inline-block;
     padding: 0 15px 0;
     width: 30%;
+}
+
+/* FORMS */
+
+div.text-wrap {
+     width: 50%;
+    float: left;
+    padding-right: 16px;
+}
+
+div#ninja_forms_field_2_div_wrap {
+    padding-right: 0;
+}
+
+div.submit-wrap {
+    float: right;
+}
+
+div.textarea-wrap {
+    width: 100%;
+    float: left;
+
+}
+
+input[value="Send"], input[type="submit"] {
+    padding: 15px 85px;
+    font: 17px/1.65 'open sans', Arial, sans-serif;
+    font-weight: 700;
+    background-color: #45ac9d;
+    color: white;
+}
+
+input[type="submit"] {
+    padding: 0 20px;
+}
+
+.ninja-forms-form-wrap label {
+    font-weight: normal;
+    font: 14px/1.65 'open sans', Arial, sans-serif;
+}
+
+/* ABOUT PAGE STYLES */
+
+.about-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll 50% 80%/ cover rgba(0, 0, 0, 0);
+    /* height: 303px; */
+    margin: 0 0 50px;
+    padding: 70px 0;
+}
+
+.aboutpage-hero {
+    text-align:center;
+}
+
+.aboutpage-hero h1 {
+    color:white;
+    font-weight:bold;   
+}
+
+.aboutpage-hero h3 {
+    color: white;
+    font-family: "open sans";
+    font-size: 24px;
+    font-weight: normal;
+    margin: auto;
+    width: 59%;
+    line-height: 1.35em;
+}
+
+.our-services {
+    text-align: center;
+    max-width: 52%;
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+.features-section{
+    padding: 10px 0;
+    border-bottom: 1px dotted #e3e1e1;
+}
+
+.features{
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+    clear:both;
+}
+
+.features-sidebar {
+    max-width: 73%;
+}
+
+.features-image{
+    max-width: 27%;
+}
+
+.features:nth-child(odd) .features-sidebar{
+    float: left;
+}
+
+.features:nth-child(odd) .features-image {
+    float: right;
+}
+
+.features:nth-child(even) .features-sidebar{
+    float: right;
+}
+
+.features:nth-child(even) .features-image {
+    float: left;
+}
+
+.features-cta {
+    width: 70%;
+    margin: auto;
+    padding: 20px 0 0;
+    overflow: auto;
+}
+
+.features-cta h2 {
+    float: left;
+    margin-right: 15px;
+}
+
+.features-cta a.button {
+    float: left;
+    padding: 10px 50px;
+    margin: 15px 0 0 15px;
+}
+
+/* Blog Page Styles */
+
+section.blog-page, footer.navigation.container  {
+    width: 960px;
+    margin: auto;
+}
+
+/* 404 STYLES */
+
+.four-oh-four{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    overflow: auto;
+}
+
+.four-oh-four-image{
+    float: left;
+    max-width: 52%;
+}
+
+.four-oh-four-text{
+    float: right;
+    max-width: 48%;
+}
+/*MISC STYLES */
+
+.accelerate-word{
+    color:#45ac9d;
 }
